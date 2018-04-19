@@ -1,0 +1,40 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "misclib", "..\misc\misclib.vcproj", "{D722FE61-DB34-42E0-B49D-EB308FEC0062}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "snoparse", "snoparse.vcproj", "{88006DC4-F440-4901-BF90-D5B80245EA3C}"
+	ProjectSection(ProjectDependencies) = postProject
+		{D722FE61-DB34-42E0-B49D-EB308FEC0062} = {D722FE61-DB34-42E0-B49D-EB308FEC0062}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test", "test.vcproj", "{57CBCF12-D886-4993-AC25-1A84D706D438}"
+	ProjectSection(ProjectDependencies) = postProject
+		{D722FE61-DB34-42E0-B49D-EB308FEC0062} = {D722FE61-DB34-42E0-B49D-EB308FEC0062}
+		{88006DC4-F440-4901-BF90-D5B80245EA3C} = {88006DC4-F440-4901-BF90-D5B80245EA3C}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{D722FE61-DB34-42E0-B49D-EB308FEC0062}.Debug.ActiveCfg = Debug|Win32
+		{D722FE61-DB34-42E0-B49D-EB308FEC0062}.Debug.Build.0 = Debug|Win32
+		{D722FE61-DB34-42E0-B49D-EB308FEC0062}.Release.ActiveCfg = Release|Win32
+		{D722FE61-DB34-42E0-B49D-EB308FEC0062}.Release.Build.0 = Release|Win32
+		{88006DC4-F440-4901-BF90-D5B80245EA3C}.Debug.ActiveCfg = Debug|Win32
+		{88006DC4-F440-4901-BF90-D5B80245EA3C}.Debug.Build.0 = Debug|Win32
+		{88006DC4-F440-4901-BF90-D5B80245EA3C}.Release.ActiveCfg = Release|Win32
+		{88006DC4-F440-4901-BF90-D5B80245EA3C}.Release.Build.0 = Release|Win32
+		{57CBCF12-D886-4993-AC25-1A84D706D438}.Debug.ActiveCfg = Debug|Win32
+		{57CBCF12-D886-4993-AC25-1A84D706D438}.Debug.Build.0 = Debug|Win32
+		{57CBCF12-D886-4993-AC25-1A84D706D438}.Release.ActiveCfg = Release|Win32
+		{57CBCF12-D886-4993-AC25-1A84D706D438}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal
