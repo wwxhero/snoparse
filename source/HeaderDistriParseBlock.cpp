@@ -28,6 +28,14 @@ public:
 		assert(r);
 		return v.GetStringValue();
 	}
+
+	int GetType()
+	{
+		CSnoValue v;
+		bool r = GetField("Type", v);
+		assert(r);
+		return v.GetIntValue();
+	}
 };
 
 
@@ -143,6 +151,11 @@ CHeaderDistriParseBlock::GetSolName(void) const
 {
 	CHILD_BLKRUN(GetCabSolObjName());
 } // end of GetSolName
+
+int CHeaderDistriParseBlock::GetType(void) const
+{
+	CHILD_BLKRUN(GetType());
+}
 
 #undef CHILD_BLKRUN
 

@@ -16,6 +16,7 @@ public:
 	int					GetColorIndex(void) const;
 	int					GetAudioState(void) const;
 	int					GetVisualState(void) const;
+	int					GetType(void) const;
 
 	virtual CPoint3D	GetOwnVehPos(void) const;
 	virtual CVector3D	GetOwnVehOri(void) const;
