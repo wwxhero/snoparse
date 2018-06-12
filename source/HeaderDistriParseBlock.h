@@ -1,3 +1,6 @@
+#pragma once
+#ifndef _HEADERDISTRIPARSEBLOCK_H
+#define _HEADERDISTRIPARSEBLOCK_H
 #include "hcsmspec.h"
 #include "point3d.h"
 #include "vector3d.h"
@@ -29,3 +32,4 @@ private:
 	int m_selfBlkIdx;
 	int m_travBlkIdx;
 };
+#endif
