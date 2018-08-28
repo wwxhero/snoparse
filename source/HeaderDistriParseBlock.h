@@ -14,6 +14,7 @@ public:
 	void TagLocalhost();
 	std::string			GetIPV4(void) const;
 	std::string			GetIPMask(void) const;
+	std::string			GetMCIP(void) const;
 	std::string			GetSimName(void) const;
 	std::string			GetSolName(void) const;
 	int					GetColorIndex(void) const;

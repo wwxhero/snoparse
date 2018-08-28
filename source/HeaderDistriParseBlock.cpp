@@ -80,6 +80,15 @@ int CHeaderDistriParseBlock::GetPort()
 	return v.GetIntValue();
 }
 
+std::string CHeaderDistriParseBlock::GetMCIP() const
+{
+	CSnoValue v;
+	bool r = GetField("MCIP", v);
+	assert(r);
+	return v.GetStringValue();
+}
+
+
 void CHeaderDistriParseBlock::TagLocalhost()
 {
 	if (m_travBlkIdx == -1) //taged without calling Next...
